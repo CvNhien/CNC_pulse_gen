@@ -1,0 +1,439 @@
+Simulator report for bai3
+Mon Oct 31 16:05:39 2022
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------+
+; Simulator Summary                           ;
++-----------------------------+---------------+
+; Type                        ; Value         ;
++-----------------------------+---------------+
+; Simulation Start Time       ; 0 ps          ;
+; Simulation End Time         ; 10.0 ms       ;
+; Simulation Netlist Size     ; 164 nodes     ;
+; Simulation Coverage         ;      63.55 %  ;
+; Total Number of Transitions ; 183348        ;
+; Simulation Breakpoints      ; 0             ;
+; Family                      ; MAX II        ;
+; Device                      ; EPM1270T144C5 ;
++-----------------------------+---------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      63.55 % ;
+; Total nodes checked                                 ; 164          ;
+; Total output ports checked                          ; 203          ;
+; Total output ports with complete 1/0-value coverage ; 129          ;
+; Total output ports with no 1/0-value coverage       ; 72           ;
+; Total output ports with no 1-value coverage         ; 73           ;
+; Total output ports with no 0-value coverage         ; 73           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                        ;
++--------------------+----------------------------+------------------+
+; Node Name          ; Output Port Name           ; Output Port Type ;
++--------------------+----------------------------+------------------+
+; |bai3|pinout1      ; |bai3|Pulse~0              ; combout          ;
+; |bai3|LessThan2~0  ; |bai3|LessThan2~0          ; combout          ;
+; |bai3|temp2[2]     ; |bai3|temp2[2]~1           ; cout0            ;
+; |bai3|temp2[2]     ; |bai3|temp2[2]~1COUT1_22   ; cout1            ;
+; |bai3|temp2[3]     ; |bai3|temp2[3]~3           ; cout             ;
+; |bai3|LessThan0~0  ; |bai3|LessThan0~0          ; combout          ;
+; |bai3|temp2[1]     ; |bai3|temp2[1]~5           ; cout0            ;
+; |bai3|temp2[1]     ; |bai3|temp2[1]~5COUT1_20   ; cout1            ;
+; |bai3|temp2[4]     ; |bai3|temp2[4]~9           ; cout0            ;
+; |bai3|LessThan0~1  ; |bai3|LessThan0~1          ; combout          ;
+; |bai3|temp[5]      ; |bai3|temp[5]~1COUT1_40    ; cout1            ;
+; |bai3|temp[6]      ; |bai3|temp[6]~3COUT1_42    ; cout1            ;
+; |bai3|temp[7]      ; |bai3|temp[7]~5COUT1_44    ; cout1            ;
+; |bai3|temp[8]      ; |bai3|temp[8]~7COUT1_46    ; cout1            ;
+; |bai3|LessThan1~0  ; |bai3|LessThan1~0          ; combout          ;
+; |bai3|temp[0]      ; |bai3|temp[0]~9            ; cout0            ;
+; |bai3|temp[0]      ; |bai3|temp[0]~9COUT1_32    ; cout1            ;
+; |bai3|temp[1]      ; |bai3|temp[1]~11           ; cout0            ;
+; |bai3|temp[1]      ; |bai3|temp[1]~11COUT1_34   ; cout1            ;
+; |bai3|temp[2]      ; |bai3|temp[2]~13           ; cout0            ;
+; |bai3|temp[2]      ; |bai3|temp[2]~13COUT1_36   ; cout1            ;
+; |bai3|temp[3]      ; |bai3|temp[3]~15           ; cout0            ;
+; |bai3|temp[3]      ; |bai3|temp[3]~15COUT1_38   ; cout1            ;
+; |bai3|LessThan1~1  ; |bai3|LessThan1~1          ; combout          ;
+; |bai3|temp[4]      ; |bai3|temp[4]~17           ; cout             ;
+; |bai3|temp[9]      ; |bai3|temp[9]~19           ; cout             ;
+; |bai3|LessThan1~2  ; |bai3|LessThan1~2          ; combout          ;
+; |bai3|LessThan1~3  ; |bai3|LessThan1~3          ; combout          ;
+; |bai3|Nbuff[2]     ; |bai3|Nbuff[2]             ; regout           ;
+; |bai3|Nbuff[0]     ; |bai3|Nbuff[0]             ; regout           ;
+; |bai3|Nbuff[1]     ; |bai3|Nbuff[1]             ; regout           ;
+; |bai3|always0~0    ; |bai3|always0~0            ; combout          ;
+; |bai3|WideOr0~0    ; |bai3|WideOr0~0            ; combout          ;
+; |bai3|WideOr0~1    ; |bai3|WideOr0~1            ; combout          ;
+; |bai3|preWR        ; |bai3|always0~1            ; combout          ;
+; |bai3|Equal5~0     ; |bai3|Equal5~0             ; combout          ;
+; |bai3|f_full~0     ; |bai3|f_full~0             ; combout          ;
+; |bai3|f_full~1     ; |bai3|f_full~1             ; combout          ;
+; |bai3|temp2[0]     ; |bai3|temp2[0]~11          ; cout0            ;
+; |bai3|temp2[0]     ; |bai3|temp2[0]~11COUT1_18  ; cout1            ;
+; |bai3|Nbuff~0      ; |bai3|Nbuff~0              ; combout          ;
+; |bai3|Equal5~1     ; |bai3|Equal5~1             ; combout          ;
+; |bai3|Nbuff~2      ; |bai3|Nbuff~2              ; combout          ;
+; |bai3|Nbuff~3      ; |bai3|Nbuff~3              ; combout          ;
+; |bai3|Add4~0       ; |bai3|Add4~0               ; combout          ;
+; |bai3|LessThan2~17 ; |bai3|LessThan2~17         ; cout             ;
+; |bai3|Add4~6       ; |bai3|Add4~6               ; combout          ;
+; |bai3|Equal1~0     ; |bai3|Equal1~0             ; combout          ;
+; |bai3|Add3~15      ; |bai3|Add3~15              ; combout          ;
+; |bai3|LessThan2~22 ; |bai3|LessThan2~22         ; cout0            ;
+; |bai3|LessThan2~22 ; |bai3|LessThan2~22COUT1_54 ; cout1            ;
+; |bai3|Add4~12      ; |bai3|Add4~12              ; combout          ;
+; |bai3|Equal2~0     ; |bai3|Equal2~0             ; combout          ;
+; |bai3|Add3~20      ; |bai3|Add3~20              ; combout          ;
+; |bai3|Add3~20      ; |bai3|Add3~22              ; cout0            ;
+; |bai3|Add3~20      ; |bai3|Add3~22COUT1_54      ; cout1            ;
+; |bai3|LessThan2~27 ; |bai3|LessThan2~27         ; cout0            ;
+; |bai3|LessThan2~27 ; |bai3|LessThan2~27COUT1_52 ; cout1            ;
+; |bai3|Add4~18      ; |bai3|Add4~18              ; combout          ;
+; |bai3|Add4~18      ; |bai3|Add4~20              ; cout             ;
+; |bai3|Equal3~0     ; |bai3|Equal3~0             ; combout          ;
+; |bai3|acc1[3]      ; |bai3|acc1[3]              ; regout           ;
+; |bai3|Nx[3]        ; |bai3|Nx[3]                ; regout           ;
+; |bai3|Add3~25      ; |bai3|Add3~25              ; combout          ;
+; |bai3|Add3~25      ; |bai3|Add3~27              ; cout0            ;
+; |bai3|Add3~25      ; |bai3|Add3~27COUT1_52      ; cout1            ;
+; |bai3|LessThan2~32 ; |bai3|LessThan2~32         ; cout0            ;
+; |bai3|LessThan2~32 ; |bai3|LessThan2~32COUT1_50 ; cout1            ;
+; |bai3|Add4~24      ; |bai3|Add4~24              ; combout          ;
+; |bai3|Add4~24      ; |bai3|Add4~26              ; cout0            ;
+; |bai3|Add4~24      ; |bai3|Add4~26COUT1_62      ; cout1            ;
+; |bai3|Nbuff~4      ; |bai3|Nbuff~4              ; combout          ;
+; |bai3|Nx1[3]       ; |bai3|Nx1[3]               ; regout           ;
+; |bai3|Nx1~3        ; |bai3|Nx1~3                ; combout          ;
+; |bai3|acc1[2]      ; |bai3|acc1[2]              ; regout           ;
+; |bai3|Nx[2]        ; |bai3|Nx[2]                ; regout           ;
+; |bai3|Add3~30      ; |bai3|Add3~30              ; combout          ;
+; |bai3|Add3~30      ; |bai3|Add3~32              ; cout0            ;
+; |bai3|Add3~30      ; |bai3|Add3~32COUT1_50      ; cout1            ;
+; |bai3|LessThan2~37 ; |bai3|LessThan2~37         ; cout0            ;
+; |bai3|LessThan2~37 ; |bai3|LessThan2~37COUT1_48 ; cout1            ;
+; |bai3|Add4~30      ; |bai3|Add4~30              ; combout          ;
+; |bai3|Add4~30      ; |bai3|Add4~32              ; cout0            ;
+; |bai3|Add4~30      ; |bai3|Add4~32COUT1_60      ; cout1            ;
+; |bai3|Nx1[2]       ; |bai3|Nx1[2]               ; regout           ;
+; |bai3|Nx1~4        ; |bai3|Nx1~4                ; combout          ;
+; |bai3|acc1[1]      ; |bai3|acc1[1]              ; regout           ;
+; |bai3|Nx[1]        ; |bai3|Nx[1]                ; regout           ;
+; |bai3|Add3~35      ; |bai3|Add3~35              ; combout          ;
+; |bai3|Add3~35      ; |bai3|Add3~37              ; cout0            ;
+; |bai3|Add3~35      ; |bai3|Add3~37COUT1_48      ; cout1            ;
+; |bai3|Add4~36      ; |bai3|Add4~36              ; combout          ;
+; |bai3|Add4~36      ; |bai3|Add4~38              ; cout0            ;
+; |bai3|Add4~36      ; |bai3|Add4~38COUT1_58      ; cout1            ;
+; |bai3|Nx2[2]       ; |bai3|Nx2[2]               ; regout           ;
+; |bai3|Nx2~4        ; |bai3|Nx2~4                ; combout          ;
+; |bai3|Nx1[1]       ; |bai3|Nx1[1]               ; regout           ;
+; |bai3|Nx1~5        ; |bai3|Nx1~5                ; combout          ;
+; |bai3|acc1[0]      ; |bai3|acc1[0]              ; regout           ;
+; |bai3|Add4~42      ; |bai3|Add4~42              ; combout          ;
+; |bai3|Nx3[2]       ; |bai3|Nx3[2]               ; regout           ;
+; |bai3|Nx3~4        ; |bai3|Nx3~4                ; combout          ;
+; |bai3|Nx2[1]       ; |bai3|Nx2[1]               ; regout           ;
+; |bai3|Nx2~5        ; |bai3|Nx2~5                ; combout          ;
+; |bai3|Nx1[0]       ; |bai3|Nx1[0]               ; regout           ;
+; |bai3|Nx1~6        ; |bai3|Nx1~6                ; combout          ;
+; |bai3|Nx4[2]       ; |bai3|Nx4[2]               ; regout           ;
+; |bai3|Nx4~8        ; |bai3|Nx4~8                ; combout          ;
+; |bai3|Nx3[1]       ; |bai3|Nx3[1]               ; regout           ;
+; |bai3|Nx3~5        ; |bai3|Nx3~5                ; combout          ;
+; |bai3|Nx2[0]       ; |bai3|Nx2[0]               ; regout           ;
+; |bai3|Nx2~6        ; |bai3|Nx2~6                ; combout          ;
+; |bai3|Nx4[1]       ; |bai3|Nx4[1]               ; regout           ;
+; |bai3|Nx4~10       ; |bai3|Nx4~10               ; combout          ;
+; |bai3|Nx3[0]       ; |bai3|Nx3[0]               ; regout           ;
+; |bai3|Nx3~6        ; |bai3|Nx3~6                ; combout          ;
+; |bai3|Nx4[0]       ; |bai3|Nx4[0]               ; regout           ;
+; |bai3|Nx4~12       ; |bai3|Nx4~12               ; combout          ;
+; |bai3|D[7]         ; |bai3|D[7]~corein          ; combout          ;
+; |bai3|clk          ; |bai3|clk~corein           ; combout          ;
+; |bai3|WR           ; |bai3|WR~corein            ; combout          ;
+; |bai3|LS           ; |bai3|LS~corein            ; combout          ;
+; |bai3|D[0]         ; |bai3|D[0]~corein          ; combout          ;
+; |bai3|D[1]         ; |bai3|D[1]~corein          ; combout          ;
+; |bai3|D[2]         ; |bai3|D[2]~corein          ; combout          ;
+; |bai3|Pulse        ; |bai3|Pulse                ; padio            ;
+; |bai3|Dir          ; |bai3|Dir                  ; padio            ;
+; |bai3|flag_T       ; |bai3|flag_T               ; padio            ;
+; |bai3|f_full       ; |bai3|f_full               ; padio            ;
++--------------------+----------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------+
+; Missing 1-Value Coverage                                           ;
++--------------------+----------------------------+------------------+
+; Node Name          ; Output Port Name           ; Output Port Type ;
++--------------------+----------------------------+------------------+
+; |bai3|temp2[4]     ; |bai3|temp2[4]~9COUT1_24   ; cout1            ;
+; |bai3|temp[5]      ; |bai3|temp[5]~1            ; cout0            ;
+; |bai3|temp[6]      ; |bai3|temp[6]~3            ; cout0            ;
+; |bai3|temp[7]      ; |bai3|temp[7]~5            ; cout0            ;
+; |bai3|temp[8]      ; |bai3|temp[8]~7            ; cout0            ;
+; |bai3|Add3~0       ; |bai3|Add3~0               ; combout          ;
+; |bai3|LessThan2~7  ; |bai3|LessThan2~7          ; cout0            ;
+; |bai3|LessThan2~7  ; |bai3|LessThan2~7COUT1_58  ; cout1            ;
+; |bai3|acc1[7]      ; |bai3|acc1[7]              ; regout           ;
+; |bai3|Add3~5       ; |bai3|Add3~5               ; combout          ;
+; |bai3|Add3~5       ; |bai3|Add3~7               ; cout0            ;
+; |bai3|Add3~5       ; |bai3|Add3~7COUT1_58       ; cout1            ;
+; |bai3|LessThan2~12 ; |bai3|LessThan2~12         ; cout0            ;
+; |bai3|LessThan2~12 ; |bai3|LessThan2~12COUT1_56 ; cout1            ;
+; |bai3|acc1[6]      ; |bai3|acc1[6]              ; regout           ;
+; |bai3|Nx[6]        ; |bai3|Nx[6]                ; regout           ;
+; |bai3|Add3~10      ; |bai3|Add3~10              ; combout          ;
+; |bai3|Add3~10      ; |bai3|Add3~12              ; cout0            ;
+; |bai3|Add3~10      ; |bai3|Add3~12COUT1_56      ; cout1            ;
+; |bai3|Add4~6       ; |bai3|Add4~8               ; cout0            ;
+; |bai3|Add4~6       ; |bai3|Add4~8COUT1_66       ; cout1            ;
+; |bai3|Nx1[6]       ; |bai3|Nx1[6]               ; regout           ;
+; |bai3|Nx1~0        ; |bai3|Nx1~0                ; combout          ;
+; |bai3|acc1[5]      ; |bai3|acc1[5]              ; regout           ;
+; |bai3|Nx[5]        ; |bai3|Nx[5]                ; regout           ;
+; |bai3|Add3~15      ; |bai3|Add3~17              ; cout             ;
+; |bai3|Add4~12      ; |bai3|Add4~14              ; cout0            ;
+; |bai3|Add4~12      ; |bai3|Add4~14COUT1_64      ; cout1            ;
+; |bai3|Nx2[6]       ; |bai3|Nx2[6]               ; regout           ;
+; |bai3|Nx2~0        ; |bai3|Nx2~0                ; combout          ;
+; |bai3|Nx1[5]       ; |bai3|Nx1[5]               ; regout           ;
+; |bai3|Nx1~1        ; |bai3|Nx1~1                ; combout          ;
+; |bai3|acc1[4]      ; |bai3|acc1[4]              ; regout           ;
+; |bai3|Nx[4]        ; |bai3|Nx[4]                ; regout           ;
+; |bai3|Nx3[6]       ; |bai3|Nx3[6]               ; regout           ;
+; |bai3|Nx3~0        ; |bai3|Nx3~0                ; combout          ;
+; |bai3|Nx2[5]       ; |bai3|Nx2[5]               ; regout           ;
+; |bai3|Nx2~1        ; |bai3|Nx2~1                ; combout          ;
+; |bai3|Nx1[4]       ; |bai3|Nx1[4]               ; regout           ;
+; |bai3|Nx1~2        ; |bai3|Nx1~2                ; combout          ;
+; |bai3|Nx4[6]       ; |bai3|Nx4[6]               ; regout           ;
+; |bai3|Nx4~0        ; |bai3|Nx4~0                ; combout          ;
+; |bai3|Nx3[5]       ; |bai3|Nx3[5]               ; regout           ;
+; |bai3|Nx3~1        ; |bai3|Nx3~1                ; combout          ;
+; |bai3|Nx2[4]       ; |bai3|Nx2[4]               ; regout           ;
+; |bai3|Nx2~2        ; |bai3|Nx2~2                ; combout          ;
+; |bai3|Nx4[5]       ; |bai3|Nx4[5]               ; regout           ;
+; |bai3|Nx4~2        ; |bai3|Nx4~2                ; combout          ;
+; |bai3|Nx3[4]       ; |bai3|Nx3[4]               ; regout           ;
+; |bai3|Nx3~2        ; |bai3|Nx3~2                ; combout          ;
+; |bai3|Nx2[3]       ; |bai3|Nx2[3]               ; regout           ;
+; |bai3|Nx2~3        ; |bai3|Nx2~3                ; combout          ;
+; |bai3|Nx4[4]       ; |bai3|Nx4[4]               ; regout           ;
+; |bai3|Nx4~4        ; |bai3|Nx4~4                ; combout          ;
+; |bai3|Nx3[3]       ; |bai3|Nx3[3]               ; regout           ;
+; |bai3|Nx3~3        ; |bai3|Nx3~3                ; combout          ;
+; |bai3|Add4~42      ; |bai3|Add4~44              ; cout0            ;
+; |bai3|Add4~42      ; |bai3|Add4~44COUT1_56      ; cout1            ;
+; |bai3|Nx4[3]       ; |bai3|Nx4[3]               ; regout           ;
+; |bai3|Nx4~6        ; |bai3|Nx4~6                ; combout          ;
+; |bai3|~GND         ; |bai3|~GND                 ; combout          ;
+; |bai3|D[3]         ; |bai3|D[3]~corein          ; combout          ;
+; |bai3|D[4]         ; |bai3|D[4]~corein          ; combout          ;
+; |bai3|D[5]         ; |bai3|D[5]~corein          ; combout          ;
+; |bai3|D[6]         ; |bai3|D[6]~corein          ; combout          ;
+; |bai3|N[7]         ; |bai3|N[7]~corein          ; combout          ;
+; |bai3|N[6]         ; |bai3|N[6]~corein          ; combout          ;
+; |bai3|N[5]         ; |bai3|N[5]~corein          ; combout          ;
+; |bai3|N[4]         ; |bai3|N[4]~corein          ; combout          ;
+; |bai3|N[3]         ; |bai3|N[3]~corein          ; combout          ;
+; |bai3|N[2]         ; |bai3|N[2]~corein          ; combout          ;
+; |bai3|N[1]         ; |bai3|N[1]~corein          ; combout          ;
+; |bai3|N[0]         ; |bai3|N[0]~corein          ; combout          ;
++--------------------+----------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------+
+; Missing 0-Value Coverage                                           ;
++--------------------+----------------------------+------------------+
+; Node Name          ; Output Port Name           ; Output Port Type ;
++--------------------+----------------------------+------------------+
+; |bai3|temp2[4]     ; |bai3|temp2[4]~9COUT1_24   ; cout1            ;
+; |bai3|temp[5]      ; |bai3|temp[5]~1            ; cout0            ;
+; |bai3|temp[6]      ; |bai3|temp[6]~3            ; cout0            ;
+; |bai3|temp[7]      ; |bai3|temp[7]~5            ; cout0            ;
+; |bai3|temp[8]      ; |bai3|temp[8]~7            ; cout0            ;
+; |bai3|Add3~0       ; |bai3|Add3~0               ; combout          ;
+; |bai3|LessThan2~7  ; |bai3|LessThan2~7          ; cout0            ;
+; |bai3|LessThan2~7  ; |bai3|LessThan2~7COUT1_58  ; cout1            ;
+; |bai3|acc1[7]      ; |bai3|acc1[7]              ; regout           ;
+; |bai3|Add3~5       ; |bai3|Add3~5               ; combout          ;
+; |bai3|Add3~5       ; |bai3|Add3~7               ; cout0            ;
+; |bai3|Add3~5       ; |bai3|Add3~7COUT1_58       ; cout1            ;
+; |bai3|LessThan2~12 ; |bai3|LessThan2~12         ; cout0            ;
+; |bai3|LessThan2~12 ; |bai3|LessThan2~12COUT1_56 ; cout1            ;
+; |bai3|acc1[6]      ; |bai3|acc1[6]              ; regout           ;
+; |bai3|Nx[6]        ; |bai3|Nx[6]                ; regout           ;
+; |bai3|Add3~10      ; |bai3|Add3~10              ; combout          ;
+; |bai3|Add3~10      ; |bai3|Add3~12              ; cout0            ;
+; |bai3|Add3~10      ; |bai3|Add3~12COUT1_56      ; cout1            ;
+; |bai3|Add4~6       ; |bai3|Add4~8               ; cout0            ;
+; |bai3|Add4~6       ; |bai3|Add4~8COUT1_66       ; cout1            ;
+; |bai3|Nx1[6]       ; |bai3|Nx1[6]               ; regout           ;
+; |bai3|Nx1~0        ; |bai3|Nx1~0                ; combout          ;
+; |bai3|acc1[5]      ; |bai3|acc1[5]              ; regout           ;
+; |bai3|Nx[5]        ; |bai3|Nx[5]                ; regout           ;
+; |bai3|Add3~15      ; |bai3|Add3~17              ; cout             ;
+; |bai3|Add4~12      ; |bai3|Add4~14              ; cout0            ;
+; |bai3|Add4~12      ; |bai3|Add4~14COUT1_64      ; cout1            ;
+; |bai3|Nx2[6]       ; |bai3|Nx2[6]               ; regout           ;
+; |bai3|Nx2~0        ; |bai3|Nx2~0                ; combout          ;
+; |bai3|Nx1[5]       ; |bai3|Nx1[5]               ; regout           ;
+; |bai3|Nx1~1        ; |bai3|Nx1~1                ; combout          ;
+; |bai3|acc1[4]      ; |bai3|acc1[4]              ; regout           ;
+; |bai3|Nx[4]        ; |bai3|Nx[4]                ; regout           ;
+; |bai3|Nx3[6]       ; |bai3|Nx3[6]               ; regout           ;
+; |bai3|Nx3~0        ; |bai3|Nx3~0                ; combout          ;
+; |bai3|Nx2[5]       ; |bai3|Nx2[5]               ; regout           ;
+; |bai3|Nx2~1        ; |bai3|Nx2~1                ; combout          ;
+; |bai3|Nx1[4]       ; |bai3|Nx1[4]               ; regout           ;
+; |bai3|Nx1~2        ; |bai3|Nx1~2                ; combout          ;
+; |bai3|Nx4[6]       ; |bai3|Nx4[6]               ; regout           ;
+; |bai3|Nx4~0        ; |bai3|Nx4~0                ; combout          ;
+; |bai3|Nx3[5]       ; |bai3|Nx3[5]               ; regout           ;
+; |bai3|Nx3~1        ; |bai3|Nx3~1                ; combout          ;
+; |bai3|Nx2[4]       ; |bai3|Nx2[4]               ; regout           ;
+; |bai3|Nx2~2        ; |bai3|Nx2~2                ; combout          ;
+; |bai3|Nx4[5]       ; |bai3|Nx4[5]               ; regout           ;
+; |bai3|Nx4~2        ; |bai3|Nx4~2                ; combout          ;
+; |bai3|Nx3[4]       ; |bai3|Nx3[4]               ; regout           ;
+; |bai3|Nx3~2        ; |bai3|Nx3~2                ; combout          ;
+; |bai3|Nx2[3]       ; |bai3|Nx2[3]               ; regout           ;
+; |bai3|Nx2~3        ; |bai3|Nx2~3                ; combout          ;
+; |bai3|Nx4[4]       ; |bai3|Nx4[4]               ; regout           ;
+; |bai3|Nx4~4        ; |bai3|Nx4~4                ; combout          ;
+; |bai3|Nx3[3]       ; |bai3|Nx3[3]               ; regout           ;
+; |bai3|Nx3~3        ; |bai3|Nx3~3                ; combout          ;
+; |bai3|Nx[0]        ; |bai3|Nx[0]                ; regout           ;
+; |bai3|Add4~42      ; |bai3|Add4~44              ; cout0            ;
+; |bai3|Add4~42      ; |bai3|Add4~44COUT1_56      ; cout1            ;
+; |bai3|Nx4[3]       ; |bai3|Nx4[3]               ; regout           ;
+; |bai3|Nx4~6        ; |bai3|Nx4~6                ; combout          ;
+; |bai3|~GND         ; |bai3|~GND                 ; combout          ;
+; |bai3|D[4]         ; |bai3|D[4]~corein          ; combout          ;
+; |bai3|D[5]         ; |bai3|D[5]~corein          ; combout          ;
+; |bai3|D[6]         ; |bai3|D[6]~corein          ; combout          ;
+; |bai3|N[7]         ; |bai3|N[7]~corein          ; combout          ;
+; |bai3|N[6]         ; |bai3|N[6]~corein          ; combout          ;
+; |bai3|N[5]         ; |bai3|N[5]~corein          ; combout          ;
+; |bai3|N[4]         ; |bai3|N[4]~corein          ; combout          ;
+; |bai3|N[3]         ; |bai3|N[3]~corein          ; combout          ;
+; |bai3|N[2]         ; |bai3|N[2]~corein          ; combout          ;
+; |bai3|N[1]         ; |bai3|N[1]~corein          ; combout          ;
+; |bai3|N[0]         ; |bai3|N[0]~corein          ; combout          ;
++--------------------+----------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Mon Oct 31 16:05:37 2022
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off bai3 -c bai3
+Info: Using vector source file "E:/Bai3/bai3.vwf"
+Info: Inverted registers were found during simulation
+    Info: Register: |bai3|acc1[3]
+    Info: Register: |bai3|acc1[1]
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      63.55 %
+Info: Number of transitions in simulation is 183348
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 157 megabytes
+    Info: Processing ended: Mon Oct 31 16:05:39 2022
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:04
+
+
