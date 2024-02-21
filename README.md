@@ -4,7 +4,7 @@ Yêu cầu bài toán
 
 
 Viết module nội suy cho máy CNC, robot bằng Verilog
-• Đầu vào clk (1us), WR, LS
+\n• Đầu vào clk (1us), WR, LS
 • Đầu vào N[7:0], Nx[7:0]
 • Đầu ra Pulse, Dir
 • Khi có xung cạnh lên của WR, Nx sẽ nạp giá trị mới.
