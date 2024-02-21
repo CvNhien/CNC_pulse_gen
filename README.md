@@ -1,7 +1,9 @@
 # CNC_pulse_gen
 Module nội suy cho máy CNC, robot
 
-Yêu cầu bài toán
+![image](https://github.com/CvNhien/CNC_pulse_gen/assets/111190445/76a1a10b-d85b-44d5-b8aa-a51a680d154f)
+
+**Yêu cầu bài toán**
 
 Viết module nội suy cho máy CNC, robot bằng Verilog
 
@@ -17,7 +19,7 @@ Viết module nội suy cho máy CNC, robot bằng Verilog
 
 • Nx[7] qui định bit dấu cho Dir, Nx[7] = 1, Dir = 1. Nx [7] = 0, Dir = 0. Nx[6:0] là giá trị số xung cần xuất
 
-Sử dụng thuật toán nội suy đường thẳng theo phương pháp xung chuẩn
+**Sử dụng thuật toán nội suy đường thẳng theo phương pháp xung chuẩn**
 ![image](https://github.com/CvNhien/CNC_pulse_gen/assets/111190445/ae0685e2-2ba8-4ad4-8518-8447b5465188)
 
 **Các yêu cầu:**
