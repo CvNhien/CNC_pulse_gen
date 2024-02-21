@@ -10,13 +10,15 @@ Viết module nội suy cho máy CNC, robot bằng Verilog
 • Đầu vào N[7:0], Nx[7:0]
 
 • Đầu ra Pulse, Dir
+
 • Khi có xung cạnh lên của WR, Nx sẽ nạp giá trị mới.
-• Khi LS = 1, ngõ ra Pulse = 0,
-LS = 0, Pulse xuất ra theo nội suy.
-• Nx[7] qui định bit dấu cho Dir,
-Nx[7] = 1, Dir = 1.
-Nx [7] = 0, Dir = 0.
-Nx[6:0] là giá trị số xung cần xuất
+
+• Khi LS = 1, ngõ ra Pulse = 0; Khi LS = 0, Pulse xuất ra theo nội suy.
+
+• Nx[7] qui định bit dấu cho Dir, Nx[7] = 1, Dir = 1. Nx [7] = 0, Dir = 0. Nx[6:0] là giá trị số xung cần xuất
+
 Sử dụng thuật toán nội suy đường thẳng theo phương pháp xung chuẩn
+![image](https://github.com/CvNhien/CNC_pulse_gen/assets/111190445/ae0685e2-2ba8-4ad4-8518-8447b5465188)
+
 
 
