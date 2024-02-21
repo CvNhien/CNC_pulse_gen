@@ -30,6 +30,8 @@ Sử dụng thuật toán nội suy đường thẳng theo phương pháp xung c
 6. Cho phép ghi tối đa 4 xung WR vào buffer trong 1 chu kỳ flag_T (Nbuff = 4), không lưu buffer nếu xung WR thứ 5 xảy ra. Khi ghi đủ 4 giá trị cờ flag_full = 1. Kiểm tra chỉ khi flag_full = 0 (khi Nbuff = 3, 2, 1, 0) thì mới tiếp tục nhận giá trị WR.
 7. Khi LS = 1, ngõ ra Pulse = 0 và tất cả buffer sẽ bị xóa, xem như trạng thái reset lại từ đầu. Pulse chỉ xuất ở chu kỳ T kế tiếp khi LS = 0 và có xung WR sau đó.
 
+![image](https://github.com/CvNhien/CNC_pulse_gen/assets/111190445/5eb45d8e-7129-4784-919a-55dbc0e8eaec)
+
 **Kết quả mô phỏng trên phần mềm Quartus II**
 
 ![image](https://github.com/CvNhien/CNC_pulse_gen/assets/111190445/7450654e-9264-45c2-82c6-29d3300bd38c)
