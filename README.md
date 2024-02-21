@@ -1,11 +1,14 @@
 # CNC_pulse_gen
 Module nội suy cho máy CNC, robot
+
 Yêu cầu bài toán
 
-
 Viết module nội suy cho máy CNC, robot bằng Verilog
-\n• Đầu vào clk (1us), WR, LS
+
+• Đầu vào clk (1us), WR, LS
+
 • Đầu vào N[7:0], Nx[7:0]
+
 • Đầu ra Pulse, Dir
 • Khi có xung cạnh lên của WR, Nx sẽ nạp giá trị mới.
 • Khi LS = 1, ngõ ra Pulse = 0,
