@@ -31,6 +31,7 @@ Sử dụng thuật toán nội suy đường thẳng theo phương pháp xung c
 7. Khi LS = 1, ngõ ra Pulse = 0 và tất cả buffer sẽ bị xóa, xem như trạng thái reset lại từ đầu. Pulse chỉ xuất ở chu kỳ T kế tiếp khi LS = 0 và có xung WR sau đó.
 
 **Kết quả mô phỏng trên phần mềm Quartus II**
+
 ![image](https://github.com/CvNhien/CNC_pulse_gen/assets/111190445/7450654e-9264-45c2-82c6-29d3300bd38c)
 
 
