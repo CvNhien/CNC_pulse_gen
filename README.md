@@ -36,6 +36,6 @@ Viết module nội suy cho máy CNC, robot bằng Verilog
 
 **Kết quả mô phỏng trên phần mềm Quartus II**
 
-![image](https://github.com/CvNhien/CNC_pulse_gen/assets/111190445/7450654e-9264-45c2-82c6-29d3300bd38c)
+![image](https://github.com/CvNhien/CNC_pulse_gen/assets/111190445/154e0d9e-233b-44e1-a667-21c4c9e170c6)
 
 
